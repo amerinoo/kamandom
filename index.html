@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Kamandom</title>
+      <link rel="icon" type="image/png" href="favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        #title {
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #image {
+            width: 40%
+        }
+
+        #description {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+           #image {
+               width: 100%
+           }
+
+           #description {
+               font-size: 25px;
+               margin: 30px 8px
+           }
+         }
+      </style>
+   </head>
+   <body>
+      <div style="display: flex; flex-flow: column; align-items: center;">
+         <p id="title">The script element</p>
+         <img id="image" src="">
+         <p id="description"></p>
+      </div>
+      <script>
+         data=
+         [
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-cascada-posicion-s2779450.html",
+                 "title": "La cascada",
+                 "img": "https://assets.afcdn.com/story/20180709/1294753_w980h638c1.jpg",
+                 "description": "¿Quieres innovarte y salir de la rutina con tu pareja? Prueba la cascada: posición que te permite tener sexo en una silla."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-amazona-s2779456.html",
+                 "title": "La amazona",
+                 "img": "https://assets.afcdn.com/story/20180709/1294759_w980h638c1.jpg",
+                 "description": "El hombre se encuentra cómodamente sentado sobre una silla. La mujer se monta a horcajadas sobre él."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/candelabro-italiano-s2779437.html",
+                 "title": "Candelabro Italiano",
+                 "img": "https://assets.afcdn.com/story/20180709/1294741_w980h638c1.jpg",
+                 "description": "¿Te gustaría probar nuevas cosas con tu pareja? Descubre la postura del candelabro italiano, clásica y original... Todos los detalles están aquí."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-estrella-s2779458.html",
+                 "title": "La estrella",
+                 "img": "https://assets.afcdn.com/story/20180709/1294761_w980h638c1.jpg",
+                 "description": "La mujer se encuentra tumbada, sobre la espalda, con una pierna estirada y la otra doblada. El hombre se monta a horcajadas sobre ella, pasando una pierna por debajo de su pierna doblada y echando uno de los brazos hacia atrás, para apoyarse."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/montana-magica-s2779496.html",
+                 "title": "La montaña mágica",
+                 "img": "https://assets.afcdn.com/story/20180709/1294798_w980h638c1.jpg",
+                 "description": "La montaña mágica es una postura muy cómoda que todo el mundo puede experimentar. Si quieres innovarte en la cama suavemente, esta posición es la mejor."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/velear-en-la-cama-s2779410.html",
+                 "title": "Velear en la cama, postura del barco en vela",
+                 "img": "https://assets.afcdn.com/story/20180709/1294714_w980h638c1.jpg",
+                 "description": "Descubre todos los secretos para velear en la cama con la postura del barco en vela. ¡Sal de la rutina!"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/puente-de-madera-s2779406.html",
+                 "title": "El puente de madera",
+                 "img": "https://assets.afcdn.com/story/20180709/1294710_w980h638c1.jpg",
+                 "description": "De todas las posturas del Kamasutra, el puente de madera es una de las más acrobáticas. Todos los consejos para probar el puente de madera están aquí..."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/sexo-contra-la-pared-s2779476.html",
+                 "title": "Sexo contra la pared",
+                 "img": "https://assets.afcdn.com/story/20180709/1294778_w980h638c1.jpg",
+                 "description": "¿Quieres innovarte y tener sexo contra la pared? Esta postura sexual te permite gozar una nueva forma de hacer el amor y tener sexo contre la pared."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-pino-indio-s2779459.html",
+                 "title": "El pino indio",
+                 "img": "https://assets.afcdn.com/story/20180709/1294762_w980h638c1.jpg",
+                 "description": "La mujer apoyada en las manos con los brazos extendidos. El hombre al borde de la cama le levanta la pelvis mientras ella desliza las piernas por debajo de sus brazos."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/postura-estrella-de-mar-s2779416.html",
+                 "title": "Postura estrella de mar",
+                 "img": "https://assets.afcdn.com/story/20180709/1294720_w980h638c1.jpg",
+                 "description": "La postura estrella de mar es clásica y acrobática a la vez. No es necesario estar en la cama para experimentar la postura estrella de mar. ¡Atrévete!"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/posicion-flor-de-loto-s2779454.html",
+                 "title": "La posición flor de loto",
+                 "img": "https://assets.afcdn.com/story/20180709/1294757_w980h638c1.jpg",
+                 "description": "¿Te gustaría probar nuevas cosas con tu pareja? La posición flor de loto o unión del loto, permite un amor cara a cara muy placentero."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-nota-x-s2779484.html",
+                 "title": "La nota X",
+                 "img": "https://assets.afcdn.com/story/20180709/1294786_w980h638c1.jpg",
+                 "description": "En esta postura lo más importante es el control, así que asúmelo desde el primer momento y haz que tu chico se tumbe boca arriba en la cama. Date la vuelta y súbete encima a horcajadas y deja que te penetre."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/piernas-al-hombro-s2779434.html",
+                 "title": "La pierna arriba",
+                 "img": "https://assets.afcdn.com/story/20180709/1294738_w980h638c1.jpg",
+                 "description": "¿Te gustaría probar nuevas cosas y originales? Descubre piernas al hombro: posición del Kamasutra con las piernas en los hombros de tu pareja…"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/posicion-del-mono-s2779471.html",
+                 "title": "Posición del Mono",
+                 "img": "https://assets.afcdn.com/story/20180709/1294773_w980h638c1.jpg",
+                 "description": "¿Te gustaría probar nuevas cosas con tu pareja? Experimenta la posición del mono, una postura sexual original y divertida…"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-francesa-pose-s2779439.html",
+                 "title": "La francesa",
+                 "img": "https://assets.afcdn.com/story/20180709/1294743_w980h638c1.jpg",
+                 "description": "Si te gusta hacer el amor de otra manera, prueba la francesa : pose del Kamasutra muy placentera. Aquí, te damos todos sus secretos..."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/posicion-tijera-s2779470.html",
+                 "title": "Las tijeras sexuales",
+                 "img": "https://assets.afcdn.com/story/20180709/1294772_w980h638c1.jpg",
+                 "description": "¿Te gustaría probar nuevas cosas con tu pareja? Descubre la posición tijera, clásica y original... Todos los detalles están aquí."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-candado-s2779466.html",
+                 "title": "El Candado",
+                 "img": "https://assets.afcdn.com/story/20180709/1294769_w980h638c1.jpg",
+                 "description": "¿Te gustaría hacer el amor en un mueble? ¡La posición del candado es para ti! Encimera, lavadora, mesa de la cocina, cómoda: todo es posible."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/postura-de-la-cruz-noruega-s2779418.html",
+                 "title": "Postura de la cruz noruega",
+                 "img": "https://assets.afcdn.com/story/20180709/1294722_w980h638c1.jpg",
+                 "description": "La postura de la cruz es muy cómoda que todo el mundo puede experimentar. Si quieres innovarte en la cama empieza con la postura de la cruz...."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/sexo-en-una-silla-s2779419.html",
+                 "title": "Sexo en una silla",
+                 "img": "https://assets.afcdn.com/story/20180709/1294723_w980h638c1.jpg",
+                 "description": "¿Quieres innovarte y tener sexo en una silla? Esta postura sexual te permite tener sexo en una silla y gozar una nueva forma de hacer el amor con tu pareja."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/posicion-mariposa-s2779502.html",
+                 "title": "Posición mariposa, clásica y original à la vez",
+                 "img": "https://assets.afcdn.com/story/20180709/1294804_w980h638c1.jpg",
+                 "description": "La posición mariposa es para los aventureros. Esta postura necesita fuerza y… ¡un toque de locura! Sal de la cama, y ¡innóvate con la posición mariposa!"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/galleta-de-la-pasion-s2779505.html",
+                 "title": "La galleta de la pasión",
+                 "img": "https://assets.afcdn.com/story/20180709/1294807_w980h638c1.jpg",
+                 "description": "Descubre la postura de la galleta de la pasión en la que los dos amantes se arrodillan uno frente al otro. Todo sobre esta posición muy placentera…"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-sumision-s2779447.html",
+                 "title": "La sumisión",
+                 "img": "https://assets.afcdn.com/story/20180709/1294751_w980h638c1.jpg",
+                 "description": "La posición de la sumisión es una postura muy cómoda que casi todo el mundo puede experimentar. Descubre todo sobre la sumisión aquí…"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/posicion-del-ventilador-s2779425.html",
+                 "title": "Posición del ventilador",
+                 "img": "https://assets.afcdn.com/story/20180709/1294729_w980h638c1.jpg",
+                 "description": "¿Quieres innovarte y salir de la cama? La posición del ventilador te permite tener sexo en una silla: una nueva forma de hacer el amor con tu pareja."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/vuelta-y-vuelta-canadiense-s2779407.html",
+                 "title": "Vuelta a casa",
+                 "img": "https://assets.afcdn.com/story/20180709/1294711_w980h638c1.jpg",
+                 "description": "Descubre todos los secretos de la postura sexual vuelta y vuelta canadiense . ¡Sal de la rutina con tu pareja!"
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-arco-del-triunfo-s2779483.html",
+                 "title": "El arco del triunfo",
+                 "img": "https://assets.afcdn.com/story/20180709/1294785_w980h638c1.jpg",
+                 "description": "Haz que tu chico se siente en la cama con sus piernas extendidas hacia delante. Súbete encima a horcajadas e introduce su pene en tu vagina."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-escalera-s2779498.html",
+                 "title": "La escalera",
+                 "img": "https://assets.afcdn.com/story/20180709/1294800_w980h638c1.jpg",
+                 "description": "Arrodíllate frente a tu pareja en la parte baja de la escalera. Ambos debéis colocaros de frente a la escalera, con vuestros cuerpos muy unidos."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-siesta-s2779408.html",
+                 "title": "La siesta",
+                 "img": "https://assets.afcdn.com/story/20180709/1294712_w980h638c1.jpg",
+                 "description": "Te sugerimos la posición de la siesta como etapa de descanso durante vuestros intercambios apasionados. Permite múltiples caricias y resultará muy agradable al no tener que hacer nada más que miraros."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-escandinavo-s2779409.html",
+                 "title": "El escandinavo",
+                 "img": "https://assets.afcdn.com/story/20180709/1294713_w980h638c1.jpg",
+                 "description": "La mujer da la espalda a su compañero y se arrodilla como muestra la imagen. El hombre la sujeta por las nalgas, modulando la amplitud del vaivén."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-sapo-s2779435.html",
+                 "title": "El sapo",
+                 "img": "https://assets.afcdn.com/story/20180709/1294739_w980h638c1.jpg",
+                 "description": "El hombre está sentado en el borde de la cama, los pies en el suelo. La espalda de la mujer apoyada en su pecho, los pies sobre la cama con las rodillas flexionadas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-milhoja-s2779412.html",
+                 "title": "La Milhoja",
+                 "img": "https://assets.afcdn.com/story/20180709/1294716_w980h638c1.jpg",
+                 "description": "La mujer se tumba sobre el hombre, abriendo las piernas para facilitar la penetración. Se acerca bien a él, para que los cuerpos se superpongan perfectamente."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/dulzura-oriental-s2779415.html",
+                 "title": "Dulzura oriental",
+                 "img": "https://assets.afcdn.com/story/20180709/1294719_w980h638c1.jpg",
+                 "description": "En la postura de la Dulzura oriental la mujer se encuentra tumbada, con las piernas ligeramente abiertas y las rodillas dobladas. El hombre se desliza entre sus muslos, elevándola suavemente por la pelvis para penetrarla."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-sacacorchos-s2779504.html",
+                 "title": "El sacacorchos",
+                 "img": "https://assets.afcdn.com/story/20180709/1294806_w980h638c1.jpg",
+                 "description": "Dile a tu chico que se tumbe boca arriba con las piernas ligeramente abiertas y la cabeza elevada con una almohada. Colócate sobre él de manera perpendicular y mantén las piernas juntas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/fuerza-aerea-s2779413.html",
+                 "title": "Fuerza aérea",
+                 "img": "https://assets.afcdn.com/story/20180709/1294717_w980h638c1.jpg",
+                 "description": "El hombre se mantiene de pie, mientras que su pareja le rodea firmemente con sus piernas. El le sostiene las nalgas y la espalda."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-molinillo-de-viento-s2779482.html",
+                 "title": "El molinillo de viento",
+                 "img": "https://assets.afcdn.com/story/20180709/1294784_w980h638c1.jpg",
+                 "description": "Tú y tu pareja os colocaréis uno al lado del otro y mirando en la misma dirección. Primero acerca tu entrepierna a la suya, colocando tus piernas a ambos lados de su torso, rodeándolo."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-visitante-s2779411.html",
+                 "title": "El visitante",
+                 "img": "https://assets.afcdn.com/story/20180709/1294715_w980h638c1.jpg",
+                 "description": "Adaptable a cualquier lugar y circunstancia, la postura del visitante ofrece todo el encanto de un encuentro inesperado. De pie, enfrente el uno del otro, el hombre estimula con su sexo el de su compañera."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-caracol-s2779426.html",
+                 "title": "El caracol",
+                 "img": "https://assets.afcdn.com/story/20180709/1294730_w980h638c1.jpg",
+                 "description": "Ella, tumbada boca arriba, las piernas plegadas sobre su pecho y los pies apoyados en los hombros de él. En la postura del caracol el hombre, de rodillas encima, puede penetrarla de manera especialmente profunda, por lo que es importante que la vagina esté suficientemente lubrificada para que no resulte doloroso."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-perrito-caliente-s2779451.html",
+                 "title": "El perrito caliente",
+                 "img": "https://assets.afcdn.com/story/20180709/1294754_w980h638c1.jpg",
+                 "description": "El hombre se encuentra tumbado sobre la espalda. Ella se tumba, también de espaldas, sobre él apoyándose en los codos, con las piernas dobladas y sus pies sobre las rodillas de él."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-nirvana-s2779465.html",
+                 "title": "El Nirvana",
+                 "img": "https://assets.afcdn.com/story/20180709/1294768_w980h638c1.jpg",
+                 "description": "La mujer se tumba boca arriba, estira las piernas y coloca sus brazos sobre su cabeza. El hombre se tumba sobre ella, y mientras la penetra, ella contrae sus músculos, intentando juntar sus piernas y apretando los brazos contra la cama."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-gran-carretilla-s2779420.html",
+                 "title": "La gran carretilla",
+                 "img": "https://assets.afcdn.com/story/20180709/1294724_w980h638c1.jpg",
+                 "description": "En la postura de la gran carretilla la mujer con la parte superior del cuerpo y los codos apoyados en la cama, el hombre le sujeta las piernas abiertas por los muslos para penetrarla. Ella pemanece inmóvil y es él el que realiza los movimientos de vaivén."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-subida-de-pierna-lujuriosa-s2779493.html",
+                 "title": "La subida de pierna lujuriosa",
+                 "img": "https://assets.afcdn.com/story/20180709/1294795_w980h638c1.jpg",
+                 "description": "Colócate frente a tu pareja de pie con las piernas abiertas a la medida de los hombros. Coge tu pierna izquierda y colócala apuntando hacia fuera, mientras que la derecha permanece mirando hacia delante."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-mecedora-s2779486.html",
+                 "title": "La mecedora",
+                 "img": "https://assets.afcdn.com/story/20180709/1294788_w980h638c1.jpg",
+                 "description": "Con tu chico tumbado sobre su espalda, colócate despacio a horcajadas sobre él. Una vez que esté dentro de ti, dile que eleve su torso de manera que os quedéis los dos sentados de frente."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-perezoso-s2779429.html",
+                 "title": "El perezoso",
+                 "img": "https://assets.afcdn.com/story/20180709/1294733_w980h638c1.jpg",
+                 "description": "Él confortablemente tumbado sobre la cama, las piernas colgando fuera de ella, con los pies en el suelo. Ella sentada encima, los muslos separados lo suficiente para poder acariciar su clítoris y la base del sexo del hombre."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-cartero-s2779455.html",
+                 "title": "El cartero",
+                 "img": "https://assets.afcdn.com/story/20180709/1294758_w980h638c1.jpg",
+                 "description": "La mujer está tumbada sobre la espalda, las nalgas en el borde de la cama. El hombre se encuentra arrodillado en el suelo sobre unos almohadones o de pie y la penetra acariciándole los senos y el clítoris."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-limbo-s2779497.html",
+                 "title": "El limbo",
+                 "img": "https://assets.afcdn.com/story/20180709/1294799_w980h638c1.jpg",
+                 "description": "Tu chico se sentará en una silla amplia con un cojín bajo las rodillas para elevarlas un poco. Colócate a horcajadas sobre él y túmbate hacia atrás apoyándote sobre sus rodillas elevadas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/asi-de-simple-s2779421.html",
+                 "title": "Así de simple",
+                 "img": "https://assets.afcdn.com/story/20180709/1294725_w980h638c1.jpg",
+                 "description": "La mujer está tumbada sobre su espalda, las piernas separadas, entregada a su pareja para que la penetre. Las manos de ambos están libres para acariciar, en particular las de ella que tienen al alcance la espalda y muslos de él."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/defensa-amorosa-s2779414.html",
+                 "title": "Defensa amorosa",
+                 "img": "https://assets.afcdn.com/story/20180709/1294718_w980h638c1.jpg",
+                 "description": "El hombre se coloca de rodillas, mientras que su pareja, tumbada de espaldas, coloca sus pies sobre el torso de él. De esta manera, el hombre puede retroceder o inclinarse hacia delante para que los muslos de su compañera entren en contacto con su pecho."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-tumbona-s2779448.html",
+                 "title": "La tumbona",
+                 "img": "https://assets.afcdn.com/story/20180709/1294752_w980h638c1.jpg",
+                 "description": "El hombre se echa hacia atrás apoyándose sobre las manos. La mujer se sitúa cómodamente sobre almohadones, con las piernas apoyadas sobre los hombros de él."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-carretilla-s2779444.html",
+                 "title": "La carretilla",
+                 "img": "https://assets.afcdn.com/story/20180709/1294748_w980h638c1.jpg",
+                 "description": "La mujer se apoya de costado sobre los antebrazos y sobre las rodillas. El hombre de rodillas, coge a su pareja por la pelvis y se pone a horcajadas, llevando el movimiento."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-tarantula-s2779445.html",
+                 "title": "La tarántula",
+                 "img": "https://assets.afcdn.com/story/20180709/1294749_w980h638c1.jpg",
+                 "description": "En la postura de la tarántula el hombre se apoya sobre las manos con las piernas estiradas. La mujer se pone a horcajadas, apoyándose con las manos y piernas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/los-chicos-a-un-lado-s2779500.html",
+                 "title": "Los chicos a un lado",
+                 "img": "https://assets.afcdn.com/story/20180709/1294802_w980h638c1.jpg",
+                 "description": "Dándole la espalda a tu pareja, túmbate junto a él, que estará arrodillado de manera perpendicular a tu cuerpo. Entonces él debe deslizar la rodilla que esté más cerca entre tus piernas y penetrarte."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-perezosa-s2779427.html",
+                 "title": "La perezosa",
+                 "img": "https://assets.afcdn.com/story/20180709/1294731_w980h638c1.jpg",
+                 "description": "El hombre de rodillas, echado para atrás apoyándose en los brazos. La mujer tendida sobre la cama, la cabeza sobre la almohada, con las piernas abiertas rodeando la cintura de su pareja, formando el ángulo necesario para permitir la penetración."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-compas-s2779424.html",
+                 "title": "El compás",
+                 "img": "https://assets.afcdn.com/story/20180709/1294728_w980h638c1.jpg",
+                 "description": "La postura del compás es una variante de la clásica y por todos conocida posición del misionero. La mujer tumbada boca arriba, con los muslos separados."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-clip-s2779440.html",
+                 "title": "El clip",
+                 "img": "https://assets.afcdn.com/story/20180709/1294744_w980h638c1.jpg",
+                 "description": "El hombre se tumba con las piernas juntas. La mujer se coloca sobre él a horcajadas, apoyándose sobre los brazos, con el busto hacia atrás."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/no-te-vayas-s2779423.html",
+                 "title": "No te vayas",
+                 "img": "https://assets.afcdn.com/story/20180709/1294727_w980h638c1.jpg",
+                 "description": "El hombre acostado de lado. La mujer también de lado contra él, la cabeza hacia los pies de su pareja, entrelazándole con sus piernas y frotando los senos contra sus muslos."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-barco-en-el-agua-s2779431.html",
+                 "title": "El barco en el agua",
+                 "img": "https://assets.afcdn.com/story/20180709/1294735_w980h638c1.jpg",
+                 "description": "En la postura del barco en el agua el hombre tumbado sobre su espalda penetra a la mujer, que está sentada sobre su sexo con las piernas hacia un lado y los muslos separados. La mujer marca el ritmo de los movimientos y puede acariciarse mientras tanto."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-samba-lateral-s2779503.html",
+                 "title": "La samba lateral",
+                 "img": "https://assets.afcdn.com/story/20180709/1294805_w980h638c1.jpg",
+                 "description": "Túmbate en la cama lateralmente, de espaldas a tu chico, y coloca las piernas estiradas formando un ángulo de 90 grados con el torso (en forma de L). Tu chico se colocará detrás en esta postura de cuchara modificada, alineará sus genitales con los tuyos y a continuación elevará un poco el torso y pondrá su mano junto a tu pecho."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-santanderina-s2779417.html",
+                 "title": "La Santanderina",
+                 "img": "https://assets.afcdn.com/story/20180709/1294721_w980h638c1.jpg",
+                 "description": "Los dos tumbados de lado, las nalgas de ella contra la pelvis de él que la penetra dejando las manos libres para las caricias, al mismo tiempo puede intentar llegar al pecho de ella para besarlo. La postura de la santanderina es muy apropiada para mujeres embarazadas durante los cinco primeros meses de gestación."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-par-de-pinzas-s2779477.html",
+                 "title": "El par de pinzas",
+                 "img": "https://assets.afcdn.com/story/20180709/1294779_w980h638c1.jpg",
+                 "description": "Esta postura es para los más activos, y requiere que la mujer tenga fuerza en los brazos. Ella se tumba en el borde de la cama, solo con sus pantorrillas, tobillos y pies sobre el colchón."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-adoracion-s2779428.html",
+                 "title": "La adoración",
+                 "img": "https://assets.afcdn.com/story/20180709/1294732_w980h638c1.jpg",
+                 "description": "Ella a cuatro patas apoyada cómodamente sobre sus antebrazos. Él, de rodillas la penetra por detrás."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-juego-de-la-cabeza-s2779485.html",
+                 "title": "El juego de la cabeza",
+                 "img": "https://assets.afcdn.com/story/20180709/1294787_w980h638c1.jpg",
+                 "description": "Comienza esta deliciosa postura colocándote tumbada en el suelo boca arriba. Con tus manos soportando el peso de tu espalda, sube las piernas para colocarlas lo más perpendicularmente posible al suelo."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/los-equilibristas-s2779433.html",
+                 "title": "Los equilibristas",
+                 "img": "https://assets.afcdn.com/story/20180709/1294737_w980h638c1.jpg",
+                 "description": "El hombre tumbado de espalda con las rodillas flexionadas, sujeta a la mujer por la cintura y la penetra por detrás. En la postura de los equilibristas es el hombre el que marca el ritmo de los movimientos."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-pajaro-prisionero-s2779405.html",
+                 "title": "El pájaro prisionero",
+                 "img": "https://assets.afcdn.com/story/20180709/1294709_w980h638c1.jpg",
+                 "description": "Para la mujer, la posición del pájaro prisionero permite una buena estimulación del punto G. El hombre debe presionar las rodillas de su pareja, una contra otra, para aumentar la presión sobre su pene."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-momento-zen-s2779487.html",
+                 "title": "El momento Zen",
+                 "img": "https://assets.afcdn.com/story/20180709/1294789_w980h638c1.jpg",
+                 "description": "Esta postura provoca un momento de tranquilidad en mitad de la locura sexual. Cuando estéis a punto de llegar al orgasmo, tomaos un respiro de la postura extenuante en la que estéis y probad a tomaos una pausa que os sirva como excitante."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-sirenita-s2779499.html",
+                 "title": "La sirenita",
+                 "img": "https://assets.afcdn.com/story/20180709/1294801_w980h638c1.jpg",
+                 "description": "Túmbate boca arriba en el borde de la cama, mesa o encimera. Coloca un cojín bajo tus nalgas para conseguir algo de altura."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/en-caja-s2779457.html",
+                 "title": "En caja",
+                 "img": "https://assets.afcdn.com/story/20180709/1294760_w980h638c1.jpg",
+                 "description": "El hombre y la mujer se encuentran tumbados de lado (la mujer dando la espalda al hombre). La mujer encaja bien su pelvis en la del hombre, quien coge con sus piernas las de la mujer."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/los-pies-en-la-tierra-s2779436.html",
+                 "title": "Los pies en la tierra",
+                 "img": "https://assets.afcdn.com/story/20180709/1294740_w980h638c1.jpg",
+                 "description": "En la postura de los pies en la tierra están los dos dos de pie, la mujer dando la espalda al hombre. Las manos enlazadas, el hombre tira hacia si para penetrarla por detrás."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/comando-g-s2779506.html",
+                 "title": "Comando G",
+                 "img": "https://assets.afcdn.com/story/20180709/1294808_w980h638c1.jpg",
+                 "description": "Túmbate boca arriba y coloca tus rodillas contra el pecho. Pídele a tu chico que se arrodille frente a ti, cogiéndote de las piernas y que te penetre."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/actitud-flexible-s2779422.html",
+                 "title": "Actitud flexible",
+                 "img": "https://assets.afcdn.com/story/20180709/1294726_w980h638c1.jpg",
+                 "description": "La mujer se tumba sobre su espalda con las rodillas levantadas hacia su pecho. El hombre se arrodilla junto a ella y la penetra, apoyándose con una mano y utilizándo la otra para sujetar los muslos de su compañera."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-dominio-s2779443.html",
+                 "title": "El dominio",
+                 "img": "https://assets.afcdn.com/story/20180709/1294747_w980h638c1.jpg",
+                 "description": "El hombre y la mujer se ponen de rodillas uno frente al otro. El hombre coloca sus pantorrillas entre las de la mujer y se pone a horcajadas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/aperitivo-sabroson-s2779438.html",
+                 "title": "Aperitivo sabrosón",
+                 "img": "https://assets.afcdn.com/story/20180709/1294742_w980h638c1.jpg",
+                 "description": "El hombre está sentado en el suelo o en la cama, con una pierna estirada y la otra ligeramente doblada para mantener el equilibrio. La mujer se monta a horcajadas, apoyándose en su pareja."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-fandango-cara-a-cara-s2779492.html",
+                 "title": "El fandango cara a cara",
+                 "img": "https://assets.afcdn.com/story/20180709/1294794_w980h638c1.jpg",
+                 "description": "Esta postura le da un nuevo significado a las palabras “Dirty Dancing”. Túmbate en el suelo o cualquier otra superficie plana boca arriba, con las piernas flexionadas y los brazos estirados hacia atrás por encima de la cabeza."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-picoteo-s2779430.html",
+                 "title": "El picoteo",
+                 "img": "https://assets.afcdn.com/story/20180709/1294734_w980h638c1.jpg",
+                 "description": "El hombre está sentado de lado, sujetándose con un brazo y la rodilla correspondiente. La mujer apoyada en sus antebrazos, se frota contra su sexo dándole la espalda y es la que marca el ritmo de los movimientos durante la penetración."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/confidencias-s2779441.html",
+                 "title": "Confidencias",
+                 "img": "https://assets.afcdn.com/story/20180709/1294745_w980h638c1.jpg",
+                 "description": "El hombre se coloca entre las piernas de su pareja. Ella se tumba de costado, con las rodillas dobladas, los pies cruzados entrelazándole con sus piernas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/por-detras-s2779432.html",
+                 "title": "Por detrás",
+                 "img": "https://assets.afcdn.com/story/20180709/1294736_w980h638c1.jpg",
+                 "description": "El hombre apoyando la espalda contra la pared, empuja con la pelvis hacia delante para penetrar a la mujer, que empuja hacia atrás. El movimiento de vaivén lo llevan a cabo las flexiones de los muslos."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-postura-del-agarre-s2779474.html",
+                 "title": "La postura del agarre",
+                 "img": "https://assets.afcdn.com/story/20180709/1294776_w980h638c1.jpg",
+                 "description": "El hombre se coloca tumbado boca arriba en la cama, mientras que ella se coloca sobre él y comienza la penetración. Entonces ella se coloca completamente estirada sobre él y comienza a moverse hacia delante y hacia atrás, marcando la velocidad que más le guste."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-maestro-de-los-muslos-s2779501.html",
+                 "title": "El maestro de los muslos",
+                 "img": "https://assets.afcdn.com/story/20180709/1294803_w980h638c1.jpg",
+                 "description": "Si estáis cansados de la típica postura de ella encima, esta postura es una manera divertida y juguetona de darle la vuelta a la tortilla. Pídele a tu chico que se tumbe boca arriba, con una pierna flexionada y la otra estirada."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-desafio-s2779442.html",
+                 "title": "El desafío",
+                 "img": "https://assets.afcdn.com/story/20180709/1294746_w980h638c1.jpg",
+                 "description": "¿Estáis preparados para el desafío? Necesitáis una silla, mucha agilidad y una gran forma física. La mujer pone los pies sobre la silla, con el torso doblado y los codos apoyados en las rodillas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/indrani-s2779475.html",
+                 "title": "Indrani",
+                 "img": "https://assets.afcdn.com/story/20180709/1294777_w980h638c1.jpg",
+                 "description": "La mujer se coloca tumbada boca arriba con sus rodillas dobladas hacia el pecho. El hombre se coloca de rodillas entre las piernas de su compañera y la penetra."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-abandono-s2779446.html",
+                 "title": "El abandono",
+                 "img": "https://assets.afcdn.com/story/20180709/1294750_w980h638c1.jpg",
+                 "description": "La mujer tumbada sobre un cojín en el suelo, con las rodillas dobladas. El hombre se introduce entre los muslos de ella y levanta su pelvis para penetrarla."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-balancin-s2779460.html",
+                 "title": "El balancín",
+                 "img": "https://assets.afcdn.com/story/20180709/1294763_w980h638c1.jpg",
+                 "description": "El hombre se sienta con las piernas cruzadas y ambos brazos a la espalda. Ella se sienta de frente al hombre, en su regazo, y le rodea con las piernas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/rock-and-roll-s2779467.html",
+                 "title": "Rock and Roll",
+                 "img": "https://assets.afcdn.com/story/20180709/1294770_w980h638c1.jpg",
+                 "description": "La mujer se tumba boca arriba y coloca sus piernas hacia atrás intentando llegar a su cabeza (como si quisiera enrollarse sobre sí misma). El hombre se arrodilla junto a ella, coge sus piernas y las coloca alrededor de su cuello, apoyadas una en cada hombro."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-sofa-s2779468.html",
+                 "title": "El sofá",
+                 "img": "https://assets.afcdn.com/story/20180709/1294771_w980h638c1.jpg",
+                 "description": "El hombre está sentado en un sofá o una silla que tenga respaldo. Sus pies tienen que estar tocando el suelo."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/supernova-s2779489.html",
+                 "title": "Supernova",
+                 "img": "https://assets.afcdn.com/story/20180709/1294791_w980h638c1.jpg",
+                 "description": "Comienza poniéndote encima de tu chico sobre la cama hecha (no os metáis bajo las sábanas). Pero él, en lugar de estar tumbado a lo largo, se colocará de manera paralela a la almohada (sabrás porqué en un momento)."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-loto-s2779472.html",
+                 "title": "El Loto",
+                 "img": "https://assets.afcdn.com/story/20180709/1294774_w980h638c1.jpg",
+                 "description": "La mujer tumbada boca arriba coloca sus piernas en posición de loto. El hombre se coloca sobre ella y la penetra."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/super-g-s2779464.html",
+                 "title": "Super G",
+                 "img": "https://assets.afcdn.com/story/20180709/1294767_w980h638c1.jpg",
+                 "description": "La mujer se coloca a cuatro patas con sus brazos frente a su cabeza. El hombre se arrodilla tras ella y la agarra de las caderas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-y-s2779495.html",
+                 "title": "La Y",
+                 "img": "https://assets.afcdn.com/story/20180709/1294797_w980h638c1.jpg",
+                 "description": "Túmbate boca abajo en la cama y a continuación deja que la parte superior de tu cuerpo cuelgue a un lado de la cama, utilizando las palmas de las manos para aguantar tu peso. Tu chico se colocará detrás de ti y te penetrará colocando sus piernas entra las tuyas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-v-erotica-s2779481.html",
+                 "title": "La V erótica",
+                 "img": "https://assets.afcdn.com/story/20180709/1294783_w980h638c1.jpg",
+                 "description": "Siéntate en la encimera y deja que tu chico se coloque de pie frente a ti. Sus piernas deben de estar algo flexionadas y separadas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-helicoptero-s2779478.html",
+                 "title": "El helicóptero",
+                 "img": "https://assets.afcdn.com/story/20180709/1294780_w980h638c1.jpg",
+                 "description": "Una vez que hayas completado un asombroso giro de 360 grados, tu y tu chico os sentiréis como dinamos sexuales, y puede que queráis seguir girando.."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/cruce-carnal-s2779480.html",
+                 "title": "Cruce carnal",
+                 "img": "https://assets.afcdn.com/story/20180709/1294782_w980h638c1.jpg",
+                 "description": "Empieza por tumbarte en la cama con los brazos colocados por encima de la cabeza. Tu chico se tumbará perpendicularmente a ti y, mientras tu elevas una de tus piernas, le dejas sitio a él, que colocará la parte inferior de su cuerpo entre tus piernas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-delfin-s2779452.html",
+                 "title": "El delfín",
+                 "img": "https://assets.afcdn.com/story/20180709/1294755_w980h638c1.jpg",
+                 "description": "La mujer se encuentra tumbada en la cama, apoyándose sobre la cabeza y hombros. De rodillas, el hombre se pone a horcajadas, manteniendo la pelvis de la mujer a la altura de su sexo y guiando el movimiento de vaivén."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/vista-especta-cular-s2779479.html",
+                 "title": "Vista Especta-cular",
+                 "img": "https://assets.afcdn.com/story/20180709/1294781_w980h638c1.jpg",
+                 "description": "Haz que tu chico se siente en la cama de manera que sus piernas estén extendidas horizontalmente hacia los pies de la cama. Date la vuelta y siéntate encima a horcajadas dándole la espalda, y a continuación introduce su pene en tu vagina."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/abrete-sesamo-s2779473.html",
+                 "title": "Ábrete sésamo",
+                 "img": "https://assets.afcdn.com/story/20180709/1294775_w980h638c1.jpg",
+                 "description": "El hombre se coloca de rodillas sobre la cama. La mujer eleva sus nalgas y coloca sus piernas alrededor de su pareja."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-tobogan-s2779488.html",
+                 "title": "El tobogán",
+                 "img": "https://assets.afcdn.com/story/20180709/1294790_w980h638c1.jpg",
+                 "description": "Túmbate boca abajo en la cama o el suelo, con las piernas estiradas y ligeramente entreabiertas. Tu chico se sentará justo detrás de tus nalgas, con las piernas estiradas y las manos a ambos lados de su cuerpo para sujetarse."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/cabalgando-hacia-atras-s2779453.html",
+                 "title": "Cabalgando hacia atrás",
+                 "img": "https://assets.afcdn.com/story/20180709/1294756_w980h638c1.jpg",
+                 "description": "El hombre tumbado sobre su espalda, la mujer, sentada a horcajadas sobre él, dándole la espalda y con las rodillas apoyadas en el suelo, efectúa movimientos de vaivén. Ella al mismo tiempo puede acariciar el sexo de su pareja o su clítoris."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/arriba-arriba-y-fuera-s2779491.html",
+                 "title": "Arriba, arriba y fuera",
+                 "img": "https://assets.afcdn.com/story/20180709/1294793_w980h638c1.jpg",
+                 "description": "Túmbate boca arriba con una almohada bajo tu cabeza y las piernas levantadas tan rectas y arriba como puedas. Mientras tu chico está de rodillas, con tus pantorrillas en su pecho, dile que empuje ligeramente tus piernas hacia un lado y te penetre."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-numero-8-s2779461.html",
+                 "title": "El número 8",
+                 "img": "https://assets.afcdn.com/story/20180709/1294764_w980h638c1.jpg",
+                 "description": "La mujer se tumba boca arriba con las piernas ligeramente entreabiertas, preferentemente con un almohadón bajo sus nalgas, para facilitar la penetración. Él se tumba sobre ella, apoyado sobre sus brazos y coloca las manos a ambos lados de la cabeza de ella."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-triangulo-torrido-s2779494.html",
+                 "title": "El triángulo tórrido",
+                 "img": "https://assets.afcdn.com/story/20180709/1294796_w980h638c1.jpg",
+                 "description": "A primera vista, puede que pienses que esta es la típica postura del misionero, con él encima y tú debajo. Pero, por supuesto, aporta un nuevo giro de tuerca."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/el-carro-de-la-pasion-s2779463.html",
+                 "title": "El carro de la pasión",
+                 "img": "https://assets.afcdn.com/story/20180709/1294766_w980h638c1.jpg",
+                 "description": "La mujer se agacha frente al hombre y se coloca en la postura de La Carretilla. Como ayuda, se puede colocar un almohadón bajo su frente."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-inclinacion-lujuriosa-s2779490.html",
+                 "title": "La inclinación lujuriosa",
+                 "img": "https://assets.afcdn.com/story/20180709/1294792_w980h638c1.jpg",
+                 "description": "Colócate de cuclillas sobre una cama o silla dándole la espalda a tu chico. Apóyate en su pecho mientras él te estabiliza poniendo sus manos bajo tus nalgas."
+             },
+             {
+                 "url": "https://www.enfemenino.com/sexualidad/la-ascension-a-la-lujuria-s2779462.html",
+                 "title": "La Ascensión a la lujuria",
+                 "img": "https://assets.afcdn.com/story/20180709/1294765_w980h638c1.jpg",
+                 "description": "El hombre se coloca de pie y la mujer frente a él. El hombre coge a la mujer, que le rodea con sus piernas y se apoya en la cama o sofá con sus pies."
+             }
+         ]
+
+         idx = Math.floor(Math.random() * data.length)
+         doc = data[idx]
+         document.getElementById("title").innerHTML = doc.title;
+         document.getElementById("image").src = doc.img;
+         document.getElementById("description").innerHTML = doc.description;
+      </script>
+   </body>
+</html>
